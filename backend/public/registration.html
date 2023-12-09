@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <form autocomplete="on" class="form" id="registrationForm" method="post" onsubmit="return validateForm();">
+        <p class="title"> Register </p>
+        <p class="message"> SignUp now</p>
+        <div class="form-group">
+            <label>
+                <input type="text" placeholder="First Name" id="fname" required>
+		    <span class="error-message" id="fname"></span>
+            </label>
+            <label>
+                <input type="text" placeholder="Last Name" id="lname" required>
+                <span class="error-message" id="lname"></span>
+		</label>
+        </div>
+        <label>
+            <input type="tel" id="phone" placeholder="Mobile No." required>
+		<span class="error-message" id="phone"></span>
+        </label>
+        <label class="course"> Qualification  
+                <select type="text" value="" name="Subject" required>
+                    <option>M.Tech</option>
+                    <option>B.Tech</option>
+                    <option>B.Com</option>
+                    <option>Diploma/Inter</option>
+                    <option>CBSE/SSC</option>
+                </select>
+        </label>
+        <label class="course">Select Your Course
+                <select type="text" value="" name="Subject" required>
+                    <option>AI/ML</option>
+                    <option>Data Science</option>
+                    <option>Web Development</option>
+                    <option>Robotics</option>
+                    <option>Deep Learning</option>
+                </select>
+        </label>
+        <label>
+            <input type="email" placeholder="Enter Your e-mail" id="mail" required>
+		<span class="error-message" id="mail"></span>
+        </label>
+        <label>
+            <input type="password" id="password" placeholder="Create Password" required>
+		<span class="error-message" id="password"></span>
+        </label>
+        <label>
+            <input type="password" id="passwordConfirm" placeholder="Confirm Password" required>
+		<span class="error-message" id="passwordConfirm"></span>
+        </label>
+        <button type="submit" class="submit" onClick="validateForm()">Submit</button>
+        <p class="signin"> Already have an Account?
+            <a href="sign.html">SignUp</a>
+        </p>
+    </form>
+
+    <script src="form.js"></script>
+</body>
+</html>
